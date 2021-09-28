@@ -16,9 +16,9 @@ app.get("/", (req, res) => {
   const origin = req.headers.origin;
   console.log(req.headers);
   setTimeout(() => {
-    if (origin === "http://192.168.0.100:3000") {
+    if (origin === "https://travel-portal-rohitsingh71.vercel.app/") {
       res.json(config2);
-    } else if (origin === "http://localhost:3000") {
+    } else if (origin === "https://travel-portal.vercel.app") {
       res.json(config1);
     } else {
       res.json(config2);
