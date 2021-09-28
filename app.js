@@ -25,6 +25,6 @@ app.get("/", (req, res) => {
     }
   }, 3000);
 });
-app.listen(3005, () => {
+app.listen(process.env.PORT || 3005, () => {
   console.log("listening on 3005");
 });
